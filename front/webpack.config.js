@@ -7,14 +7,14 @@
 var NODE_ENV = process.env.NODE_ENV || 'development';
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
-var precss = require('precss');
-var normalize = require('postcss-normalize');
-var fonts = require('postcss-font-magician');
+var precss       = require('precss');
+var normalize    = require('postcss-normalize');
+var fonts    = require('postcss-font-magician');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
-        jsx: "./src/index.jsx",
+        js: "./src/index.jsx",
         jade: "file?name=index.html!jade-html!./src/index.jade"
     },
     output : {
