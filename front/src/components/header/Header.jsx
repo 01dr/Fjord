@@ -8,7 +8,12 @@ import s from './header.pcss'
 
 class Header extends React.Component {
     render() {
-        return  <div className={ s.background }></div>;
+        return  <div className={ s.background }>
+                    <div className={ s.content }>
+                        <div className={ s.title }>Get some<br />fresh air</div>
+                        <div className={ s.description }>Fjord - modern landing page</div>
+                    </div>
+                </div>;
     }
 }
 

@@ -71,7 +71,7 @@ module.exports = {
     },
 
     postcss: function() {
-        return [autoprefixer, precss, normalize]
+        return [autoprefixer, precss, fonts, normalize]
     }
 
 };
