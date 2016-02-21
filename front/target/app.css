@@ -350,8 +350,29 @@ table {
 
 /* Created by amazi on 20.02.2016. */
 
-.menu__test___1SZZ3 {
-  color: red;
+.menu__topbar___OmIU8:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.menu__topbar___OmIU8 {
+  width: 980px;
+  height: 60px;
+  margin: 30px auto 0;
+  position: relative;
+}
+
+.menu__logo___2wmAz {
+
+}
+
+.menu__menu___14PRB {
+}
+
+.menu__menu___14PRB > li {
+  display: inline-block;
+  margin: 0 10px;
 }/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 img,legend {

@@ -25,14 +25,17 @@
     "image-webpack-loader": "^1.6.3",
     "jade": "^1.11.0",
     "jade-html-loader": "0.0.3",
+    "postcss-clearfix": "^0.2.1",
     "postcss-font-magician": "^1.4.0",
     "postcss-loader": "^0.8.1",
     "postcss-normalize": "^0.1.2",
     "precss": "^1.4.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-flexgrid": "^0.7.0",
     "redux": "^3.3.1",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13"
-  }
+  },
+  "dependencies": {}
 }
