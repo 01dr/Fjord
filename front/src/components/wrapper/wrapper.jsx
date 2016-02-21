@@ -13,7 +13,10 @@ class Wrapper extends React.Component {
     render() {
         return  <div className={ s.wrapper }>
                     <Header />
-                    
+                    <div className={ s.container }>
+                        <Menu />
+                    </div>
+                    I'm Wrapper!
                 </div>
     }
 }
