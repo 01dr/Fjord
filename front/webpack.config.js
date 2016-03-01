@@ -12,6 +12,7 @@ var normalize    = require('postcss-normalize');
 var fonts    = require('postcss-font-magician');
 var clearfix = require('postcss-clearfix');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var path = require('path');
 
 module.exports = {
     entry: {
@@ -58,12 +59,8 @@ module.exports = {
                 }
             },
             {
-                test: /\.pcss$/,
+                test: /(\.scss|\.css|\.pcss)$/,
                 loader: ExtractTextPlugin.extract('style-loader', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
-            },
-            {
-                test: /\.css/,
-                loader: 'style-loader!css-loader'
             },
             {
                 test: /\.(jpe?g|png|gif)$/i,

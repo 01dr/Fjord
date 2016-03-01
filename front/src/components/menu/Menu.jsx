@@ -6,18 +6,17 @@ import React from 'react'
 import classNames from 'classnames/bind'
 import s from './menu.pcss'
 
-import { Grid, Row, Col } from 'react-flexgrid'
+import { Grid, Row, Col } from 'react-flexbox-grid/lib/index'
 
-var logoSrc = require('./images/logo.png');
-require('react-flexgrid/lib/flexgrid.css');
+import './images/logo.png'
 
 class Menu extends React.Component {
     render() {
-        return  <Grid className={ s.topbar }>
+        return  <div className={ s.topbar }>
                     <Row>
                         <Col lg={1}>
                             <div className={ s.logo }>
-                                <img src={ logoSrc } />
+                                <img src='./images/logo.png' />
                             </div>
                         </Col>
                         <Col lg={11}>
@@ -33,7 +32,7 @@ class Menu extends React.Component {
                             </ul>
                         </Col>
                     </Row>
-                </Grid>;
+                </div>;
     }
 }
 
